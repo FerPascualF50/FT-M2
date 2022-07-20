@@ -1,0 +1,404 @@
+/*@colorBackGra: red;
+    .body{
+        background-color: @colorBackGra;
+    }*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+  color: #5E6164;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+  color: #23293B;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15 px;
+  background-color: #F6F6F6;
+}
+nav ul {
+  padding-top: 10 px;
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+nav ul a {
+  font-size: 15px;
+  color: #454A59;
+  text-decoration: none;
+}
+footer {
+  color: #22283B;
+  background: #f4f4f4;
+  padding: 20px 0;
+  border: 1px double #e0e0e0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home .intro h2 {
+  padding: 15px;
+}
+.home .intro p {
+  padding: 0 15px;
+}
+.home .intro img {
+  width: 100%;
+  margin-top: 15px;
+  border-radius: 20px;
+}
+.home .music-images {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.home .music-images img {
+  width: 28%;
+  margin: 20px 2.5%;
+  border-radius: 20px;
+  height: 100%;
+}
+.home .musica-nueva {
+  padding: 15px;
+}
+.home .musica-nueva h3 {
+  margin-top: 11px;
+}
+.home .musica-nueva p {
+  margin-top: 13px;
+}
+.home .actual {
+  margin-top: 60px;
+  border-top: 1px solid #dee2e6;
+  padding: 50px 60px;
+  display: flex;
+  justify-content: center;
+}
+.home .actual .actual-text {
+  width: 50%;
+}
+.home .actual .actual-text h3 {
+  margin-bottom: 10px;
+}
+.home .actual .actual-text p {
+  margin-bottom: 26px;
+}
+.home .actual .actual-img {
+  width: 46%;
+  margin-left: 4%;
+}
+.home .actual .actual-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+@media (max-width: 768px) {
+  h1,
+  h2 {
+    font-size: 6vw;
+  }
+  h3 {
+    font-size: 5vw;
+  }
+  p {
+    font-size: 3vw;
+  }
+  .mobile {
+    text-align: center;
+  }
+  .mobile h1 {
+    font-family: 'Russo One', sans-serif;
+    color: #23293B;
+    margin: 4vw 0 2vw 0;
+  }
+  .mobile nav {
+    margin-bottom: 1vw;
+  }
+  .mobile nav ul {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+  }
+  .mobile nav ul li {
+    font-size: 2.5vw;
+    margin: 1vw 3vw 2vw 3vw;
+    color: #23293B;
+  }
+  .container {
+    max-width: 100%;
+  }
+  #img-header {
+    width: 96vw;
+    height: 20vw;
+    margin: 0 2vw;
+    border-radius: 2vw;
+  }
+  .home .intro h2 {
+    padding: 0;
+    margin: 4vw 2vw;
+  }
+  .home .intro p {
+    padding: 0;
+    margin: 0vw 2vw;
+  }
+  .home .music-images .auricular {
+    width: 100%;
+    border-radius: 8vw;
+    margin: 8vw 2vw;
+  }
+  .home .music-images .tecnologia,
+  .home .music-images .ondas {
+    display: none;
+  }
+  .home .musica-nueva {
+    padding: 0;
+  }
+  .home .musica-nueva h3 {
+    padding: 0;
+    margin: 0 2vw;
+  }
+  .home .musica-nueva p {
+    padding: 0;
+    margin: 2vw 2vw;
+  }
+  .home .actual {
+    display: block;
+    margin-top: 10vw;
+    padding: 2vw 0;
+  }
+  .home .actual .actual-img {
+    width: 96vw;
+    margin: 2vw;
+  }
+  .home .actual .actual-text {
+    width: 100%;
+  }
+  .home .actual .actual-text h3 {
+    padding: 0;
+    margin: 4vw 2vw 0 2vw;
+  }
+  .home .actual .actual-text p {
+    padding: 0;
+    margin: 2vw 2vw;
+  }
+  .home .actual .actual-text .btn {
+    padding: 3vw;
+    margin: 4vw 8vw;
+    border-radius: 2vw;
+    text-align: center;
+    font-size: 4vw;
+    color: white;
+    background-color: #23293B;
+    border: 1px solid #23293B;
+  }
+  .home .actual .actual-text .btn:hover {
+    background-color: white;
+    color: #23293B;
+  }
+}
+.mobile {
+  text-align: center;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.041);
+  margin-bottom: 1rem;
+}
+.mobile h1 {
+  font-size: 3.2rem;
+  margin-bottom: 1rem;
+}
+.mobile nav ul {
+  display: flex;
+  justify-content: center;
+}
+.mobile nav ul li {
+  font-size: 1.6rem;
+  line-height: 1.4;
+  margin: 0 2rem;
+  cursor: pointer;
+}
+#img-header {
+  border-radius: 2rem;
+}
+.actual {
+  display: flex;
+}
+.actual .actual-text {
+  order: 1;
+}
+.actual .actual-text .btn {
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  border-radius: 1rem;
+  text-align: center;
+  color: white;
+  background-color: #23293B;
+  border: 1px solid #23293B;
+  width: 10rem;
+}
+.actual .actual-text .btn:hover {
+  background-color: white;
+  color: #23293B;
+}
+.actual .actual-img {
+  order: 2;
+  margin: 0;
+}
