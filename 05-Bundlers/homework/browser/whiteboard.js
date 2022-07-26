@@ -1,7 +1,13 @@
-(function () {
 
-  window.whiteboard = new window.EventEmitter();
 
+  //window.whiteboard = new window.EventEmitter();
+  // 1) Expone una avaiable global
+  // 2) Esta haciendo uso del modulo
+  import EventEmitter from './event-emitter';
+  //var EventEmitter = require('./event-emitter')
+  
+  //var whiteboard = new EventEmitter()
+  export default whiteboard;
   // Ultimately, the color of our stroke;
   var color;
 
@@ -24,6 +30,7 @@
     });
 
   });
+
 
   var canvas = document.getElementById('paint');
 
@@ -113,4 +120,4 @@
 
   };
 
-})();
+  //module.exports = whiteboard;

@@ -1,9 +1,7 @@
-(function () {
-
-  window.EventEmitter = EventEmitter;
+  //window.EventEmitter = EventEmitter; // Exponiendo una variable al objeto global
 
   // our EventEmitter constructor function
-  function EventEmitter () {
+  export default function EventEmitter () {
     this.subscribers = {};
   }
 
@@ -18,6 +16,7 @@
         this.subscribers[eventName] = [];
     }
 
+    
     // Push the given listener function into the array
     // located on the instance's subscribers object.
     this.subscribers[eventName].push(eventListener);
@@ -43,4 +42,4 @@
 
   };
 
-})();
+  //odule.exports = EventEmitter;
