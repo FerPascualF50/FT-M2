@@ -1,0 +1,14 @@
+.container input{
+    background-color: rgba(255, 0, 0, 0.274);
+    border: none;
+
+
+}
+
+.bttn {
+    background-color: rgba(98, 0, 255, 0.705);
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 3px;
+}

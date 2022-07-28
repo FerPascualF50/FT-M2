@@ -1,0 +1,31 @@
+.container {
+    border: gray solid 1px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 175px;
+    position: relative;
+    margin-right: 5vw;
+
+}
+
+.infoContainer{
+    display: flex;
+    justify-content: space-around;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.bttn {
+    width: min-content;
+    height: min-content;
+    background-color: rgba(89, 0, 255, 0.719);
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer
+}
