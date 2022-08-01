@@ -4,8 +4,13 @@ import SearchBar from './SearchBar.jsx';
 import './Nav.css';
 
 function Nav({onSearch}) {
+  
   return (
-    <div>Nav</div>
+    <div className ='nav-header'>
+      <img src={Logo} alt= 'img not found' />
+      <h3>Henry -Wheather app</h3>
+      <SearchBar onSearch={onSearch} />
+    </div>
   );
 };
 
